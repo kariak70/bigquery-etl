@@ -115,7 +115,7 @@ bqetl_addons:
     email: ['telemetry-alerts@mozilla.com', 'bmiroglio@mozilla.com']
     retries: 2
     retry_delay: 30m
-    
+
 bqetl_clients_daily:
   schedule_interval: 0 1 * * *
   default_args:
@@ -142,5 +142,14 @@ bqetl_public_data_json:
     owner: ascholtz@mozilla.com
     start_date: '2020-04-14'
     email: ['telemetry-alerts@mozilla.com', 'ascholtz@mozilla.com']
+    retries: 2
+    retry_delay: 30m
+
+bqetl_deletion_request_volume:
+  schedule_interval: 0 1 * * *
+  default_args:
+    owner: dthorn@mozilla.com
+    start_date: '2020-06-29'
+    email: ['telemetry-alerts@mozilla.com', 'dthorn@mozilla.com']
     retries: 2
     retry_delay: 30m
